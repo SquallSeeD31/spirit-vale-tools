@@ -7,7 +7,7 @@ interface OwnedEndpoint {
   processId: number;
 }
 
-const TARGET_REFRESH_INTERVAL_MS = 1_000;
+export const TARGET_REFRESH_INTERVAL_MS = 1_000;
 
 export interface TargetSnapshotProvider {
   snapshot(processName: string, protocols: readonly CaptureProtocol[]): Promise<{
